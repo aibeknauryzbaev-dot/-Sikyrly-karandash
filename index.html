@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Менің сиқырлы қарындашым</title>
+<link rel="stylesheet" href="style.css"></head>
+<body><div id="stage">
+ <button id="snd" class="round" aria-label="Дыбыс"><img id="sndimg" src="assets/ui/sound.png" alt=""></button>
+
+ <section id="home" class="screen active bg-classroom">
+  <img class="ch boy" src="assets/characters/boy0.png" alt="">
+  <img class="ch girl" src="assets/characters/girl0.png" alt="">
+  <img class="ch pen" src="assets/characters/pen5.png" alt="">
+  <h1 class="title">Менің сиқырлы<br>қарындашым</h1>
+  <p class="sub">Фигуралар · Сәуле · Кесінді</p>
+  <button id="start" class="big"><img src="assets/ui/b_play.png" alt=""><span>ОЙЫНДЫ БАСТАУ</span></button>
+  <div class="sparkles"></div>
+ </section>
+
+ <section id="map" class="screen bg-map">
+  <div class="banner">Әлемдер картасы</div>
+  <button class="round hbtn" data-go="home"><img src="assets/ui/b_home.png" alt=""></button>
+  <div id="mapbtns"></div>
+  <div class="stars-total"><img src="assets/ui/star.png" alt=""> <b id="mapStars">0</b></div>
+  <img class="ch pen mini" src="assets/characters/pen0.png" alt="">
+ </section>
+
+ <section id="quiz" class="screen">
+  <div class="topbar">
+   <button class="round" id="qhome"><img src="assets/ui/b_home.png" alt=""></button>
+   <div id="qtitle"></div>
+   <div class="prog"><span id="qprog"></span> <img src="assets/ui/star.png" alt=""><b id="qstars">0</b></div>
+  </div>
+  <div class="card">
+   <div id="hint" class="hint"></div>
+   <div id="prompt" class="prompt"></div>
+   <div id="visual" class="visual"></div>
+   <div id="opts" class="opts"></div>
+   <div id="fb" class="fb"></div>
+  </div>
+  <img id="qch" class="ch qch" src="assets/characters/pen3.png" alt="">
+  <button id="next" class="big nextb hidden"><img src="assets/ui/b_next.png" alt=""><span>КЕЛЕСІ</span></button>
+  <div id="fx"></div>
+ </section>
+
+ <section id="win" class="screen bg-treasure">
+  <img class="ch boy" src="assets/characters/boy6.png" alt="">
+  <img class="ch girl" src="assets/characters/girl6.png" alt="">
+  <img class="ch pen" src="assets/characters/pen6.png" alt="">
+  <img id="chest" src="assets/ui/chest.png" alt="">
+  <div class="wincard">
+   <h2 id="wintitle">ҚҰТТЫҚТАЙМЫЗ!<br>СЕН — ФИГУРАЛАР ШЕБЕРІСІҢ!</h2>
+   <p>Жиналған жұлдыз: <b id="wstars">0</b> ⭐</p>
+   <p>Орындалған тапсырма: <b id="wtasks">0</b></p>
+   <div class="row"><button id="again" class="big sm"><img src="assets/ui/b_retry.png" alt=""><span>ҚАЙТА ОЙНАУ</span></button>
+   <button id="whome" class="big sm"><img src="assets/ui/b_home.png" alt=""><span>БАСТЫ БЕТКЕ</span></button></div>
+  </div>
+ </section>
+</div><script src="script.js"></script></body></html>
